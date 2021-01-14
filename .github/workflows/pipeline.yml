@@ -14,6 +14,8 @@ jobs:
         with:
           node-version: '12.x'
       - name: npm install 
-        run: npm install  
+        run: npm start
+      - name: npm start
+        run: npm run dev
       - name: lint
         run: npm run eslint
