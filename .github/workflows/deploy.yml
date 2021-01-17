@@ -15,6 +15,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "muikku-pokedex"
           heroku_email: "markus.muinonen@gmail.com"
-          healthcheck: "https://[muikku-pokedex].herokuapp.com/health"
+          healthcheck: "https://muikku-pokedex.herokuapp.com/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
