@@ -31,7 +31,6 @@ jobs:
         with:
           command: npm run test:e2e
           start: npm run start-prod
-           with:
           config: pageLoadTimeout=100000,baseUrl=http://localhost:5000
 
       if: ${{ github.event_name == 'push' }}
