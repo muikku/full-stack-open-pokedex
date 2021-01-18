@@ -30,9 +30,9 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm run start-prod
+          wait-on: http://localhost:5000
           command: npm run test:e2e
           wait-on: http://localhost:5000
-          wait-on-timeout: 120
 
       - name: deploy
         if: ${{ github.event_name == 'push' }}
