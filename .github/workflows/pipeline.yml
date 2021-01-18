@@ -31,6 +31,7 @@ jobs:
         with:
           start: npm run start-prod
           wait-on: http://localhost:5000
+          wait-on-time: 360000
           command: npm run test:e2e
 
       - name: deploy
