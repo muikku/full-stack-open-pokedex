@@ -11,6 +11,7 @@
     "build": "webpack --mode production",
     "test:e2e": "cypress run --config pageLoadTimeout=120000,baseUrl=http://localhost:5000"
   },
+  ///tosi hieno juttu
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smartlyio/fullstackopen-cicd.git"
